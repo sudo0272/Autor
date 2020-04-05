@@ -52,7 +52,7 @@ for c, i in enumerate(f.readlines()):
         if arguments[0] == 'absolute':
             mouse.position = tuple(map(int, arguments[1:]))
 
-        elif arguments[1] == 'relative':
+        elif arguments[0] == 'relative':
             mouse.move(int(arguments[1]), int(arguments[2]))
 
         else:
